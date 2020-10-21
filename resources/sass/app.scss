@@ -1,0 +1,140 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.loginform{
+ background-color: #ffffff;
+ height: 600px;
+ width: 600px;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ position: absolute;
+ border-radius: 70px;
+ margin: 10px;
+}
+
+.expenseform{
+    background-color: #ffffff;
+    height: 85vh;
+    width: 85vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 70px;
+    margin: 10px;
+   }
+.expensetext{
+    margin-left: 40px;
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 45px;
+}
+.logintext{
+    margin-left: 40px;
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 55px;
+
+}
+
+.textoverflow{
+       text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100px !important;
+      
+}
+
+
+
+.bg-img{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/img/money.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+     background-size: cover;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    height: 100vh;
+    width: 100vw;
+ 
+
+}
+
+.addScroll {
+    overflow-y: auto;
+    max-height: 75vh;
+    overflow-x: hidden;
+  }
+.error{
+    font-size: 14px;
+    color:red;
+    margin-left: 14px;
+}
+.paginationz li{
+  
+    display: inline-flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    
+}
+
+.paginationz a{
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    font-size: 15px;
+    font-weight: 900;
+
+ 
+    border: 2px solid #a5c2df;
+}
+
+.paginateActive  a{
+    background-color: rgb(139, 240, 253);
+    color: red;
+}
+
+.paginateActive li{
+    color: red;
+ 
+}
+@media only screen and (max-width: 560px) {
+        
+    .loginform{
+        width: 320px;
+        margin: 5px;
+    }
+    .logintext{
+    
+        font-size: 35px;
+    
+    }
+
+    .expenseform{
+        border-radius: 0px;
+        width: 90vw;
+        height: 90vh;
+       }
+
+    .addScroll {
+        
+        max-height: 90vh;
+      }
+   
+
+  }
+
+
+
